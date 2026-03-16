@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon" type="image/x-icon" href="svg/favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav>
+                <div class="navbar flex-space-between">
+                    <div class="navbar-left flex-center">
+                        <div class="logo">
+                            <a href="">
+                                <img src="svg/logo.svg" width="50" alt="logo">
+                            </a>
+                        </div>
+                        <div class="home-search-bar flex-center">
+                            <div class="home">
+                                <a href="#" class="flex-center p-1 border-circule">
+                                    <img src="svg/home.svg" width="50" alt="home">
+                                </a>
+                            </div>
+                            <form action="#" class="search-bar flex-center border-circule">
+                                <div class="input">
+                                    <a href="#" class="search-logo p-1 border-circule">
+                                        <img src="svg/search.svg" width="50" alt="search">
+                                    </a>
+                                    <input class="border-circule" id="search" type="text"
+                                        placeholder="What do you want to play?">
+                                    <a href="#" class="flex-center browse">
+                                        <img src="svg/browse.svg" width="50" alt="browse">
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="navbar-right flex-center">
+                        <div class="items">
+                            <ul class="flex-center">
+                                <li>
+                                    <a href="#">Premium</a>
+                                </li>
+                                <li>
+                                    <a href="#">Support</a>
+                                </li>
+                                <li>
+                                    <a href="#">Download</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pipe">
+
+                        </div>
+                        <div class="install-app">
+                            <a href="#" class="flex-center"><img src="svg/install.svg" width="50" alt="install">Install
+                                App</a>
+                        </div>
+                        <div class="nav-buttons flex-center">
+                            <div class="signup">
+                                <a href="#">Sign up</a>
+                            </div>
+                            <div class="login">
+                                <a href="#">Log in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="fake-header">
+
+        </div>
+        <aside>
+            <div class="sidebar">
+                <div class="sidebar-header flex-space-between">
+                    <div class="flex-center">
+                        <img id="hamburger" width="30" src="svg/sidebar.svg" alt="">
+                        <h3>Your Library</h3>
+                    </div>
+                    <button class="btn"><img src="svg/create.svg" width="50" alt="create">Create</button>
+                </div>
+                <div class="sidebar-main">
+                    <div class="sidebar-main-card">
+                        <h3>Create your first playlist</h3>
+                        <span>It's easy, we'll help you</span>
+                        <button class="sidebar-main-button border-circule">Create playlist</button>
+                    </div>
+                    <div class="sidebar-main-card">
+                        <h3>Let's find some podcasts to follow</h3>
+                        <span>We'll keep you updated on new episodes</span>
+                        <button class="sidebar-main-button border-circule">Browse podcasts</button>
+                    </div>
+                </div>
+                <div class="sidebar-footer">
+                    <div class="sidebar-footer-content">
+                        <ul>
+                            <li>
+                                <a href="#">Legal</a>
+                            </li>
+                            <li>
+                                <a href="#">Safety & Privacy Center</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Cookies</a>
+                            </li>
+                            <li>
+                                <a href="#">About Ads</a>
+                            </li>
+                            <li>
+                                <a href="#">Accessibility</a>
+                            </li>
+                        </ul>
+                        <div class="footer-cooki">
+                            <a href="#">Cookies</a>
+                        </div>
+                    </div>
+                    <div class="english-button-container">
+                        <button class="btn english-button"><img src="svg/world.svg" width="50" alt="world">English
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <section>
+                <div class="main">
+                    <div class="main-content">
+                        <div class="cards-container top-color">
+                            <div class="main-content-header flex-space-between">
+                                <!-- <h2>Trending songs</h2> -->
+                                <h2>Your Albums</h2>
+                                <a href="#">Show all</a>
+                            </div>
+                            <div class="cards playlist">
+                            </div>
+                        </div>
+
+                        <div class="cards-container">
+                            <div class="main-content-header flex-space-between">
+                                <h2>Popular artists</h2>
+                                <a href="#">Show all</a>
+                            </div>
+                            <div class="cards">
+                                <div class="card artist">
+                                    <img src="assets/artist img/pritam.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <a href="#">Pritam</a>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                                <div class="card artist">
+                                    <img src="assets/artist img/arrehman.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                    </div>
+                                    <div class="card-content">
+                                        <a href="#">A.R. Rahman</a>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                                <div class="card artist">
+                                    <img src="assets/artist img/arijitbabu.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <a href="#">Arijit Singh</a>
+                                    </div>
+                                    <span>Artist</span>
+                                </div>
+                                <div class="card artist">
+                                    <img src="assets/artist img/sachin-jigar.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <a href="#">Sachin-Jigar</a>
+                                    </div>
+                                    <span>Artist</span>
+                                </div>
+                                <div class="card artist">
+                                    <img src="assets/artist img/vishal-shekhar.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <a href="#">Vishal-Shekhar</a>
+                                    </div>
+                                    <span>Artist</span>
+                                </div>
+                                <div class="card artist">
+                                    <img src="assets/artist img/atif-aslam.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <a href="#">Atif-Aslam</a>
+                                    </div>
+                                    <span>Artist</span>
+                                </div>
+                                <div class="card artist">
+                                    <img src="assets/artist img/anirudh-ravichander.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <a href="#">Anirudh-Ravichandar</a>
+                                    </div>
+                                    <span>Artist</span>
+                                </div>
+                                <div class="card artist">
+                                    <img src="assets/artist img/udit-narayan.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <a href="#">Udit-Narayan</a>
+                                    </div>
+                                    <span>Artist</span>
+                                </div>
+                                <div class="card artist">
+                                    <img src="assets/artist img/honey-singh.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <a href="#">Yo Yo Honey Singh</a>
+                                    </div>
+                                    <span>Artist</span>
+                                </div>
+                                <div class="card artist">
+                                    <img src="assets/artist img/shankar-ehsaan-loy.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <a href="#">Shankar-Ehsaan-Loy</a>
+                                    </div>
+                                    <span>Artist</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards-container">
+                            <div class="main-content-header flex-space-between">
+                                <h2>Popular albums and singles</h2>
+                                <a href="#">Show all</a>
+                            </div>
+                            <div class="cards">
+                                <div class="card">
+                                    <img src="assets/popular_albums/ashiqui2.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <a href="#">Ashiqui 2</a>
+                                        <span><a href="#">Mithoon</a>,<a href="#"> Ankit Tiwari</a>,<a href="#"> Jeet
+                                                Gannguli</a></span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/popular_albums/yejavanihaideevani.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <a href="#">Ye Jawani Hai Deewani</a>
+                                        <span><a href="#">Pritam</a></span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/popular_albums/sanamterikasam.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <a href="#">Sanam Teri Kasam (Original Motion Picture Soundtrack)</a>
+                                        <span><a href="#">Himesh Reshamiya</a>,<a href="#"> Sameer Anjaan</a>,<a
+                                                href="#"> Subrat Sinha</a>,<a href="#"> Shabbir Ahemad</a></span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/popular_albums/findingher.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <a href="#">Finding Her</a>
+                                        <span><a href="#">Kushagra</a>,<a href="#"> Bharath</a>,<a href="#">
+                                                Shaaheal</a></span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/popular_albums/younggoat.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <a href="#">Young G.O.A.T</a>
+                                        <span><a href="#">Cheema Y</a>,<a href="#"> Gur Sidhu</a></span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/popular_albums/ranjhna.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <a href="#">Rajhna (From "Do Patti")</a>
+                                        <span><a href="#">Shachet-Parampara</a>,<a href="#"> Parampara Tondon</a>,<a
+                                                href="#"> Kausar Munir</a></span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/popular_albums/ultimatelovesong.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <a href="#">Ultimate Love Songs- Arijit Singh</a>
+                                        <span><a href="#">Arijit Singh</a></span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/popular_albums/makingmemories.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <a href="#">Making Memories</a>
+                                        <span><a href="#">Karan Aujla</a>,<a href="#"> Ikky</a></span>
+                                    </div>
+                                </div>
+                                <div class="card svg">
+                                    <img src="assets/popular_albums/variousartist.svg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <a href="#">Various Artist</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/popular_albums/sicario.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <a href="#">Sicario</a>
+                                        <span><a href="#">Shubh</a></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="cards-container">
+                            <div class="main-content-header flex-space-between">
+                                <h2>Popular radio</h2>
+                                <a href="#">Show all</a>
+                            </div>
+                            <div class="cards">
+                                <div class="card">
+                                    <img src="assets/popular_radio/arijit singh.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <span><a href="#">With Sachin-Jigar, Jeet Gannguli, Pritam and more</a></span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/popular_radio/kk.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <span><a href="#">With Pritam, Ankit Tiwari, Vishal-Shekhar and more</a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/popular_radio/shreya ghoshal.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <span><a href="#">With A.R. Rahman, Arijit Singh, Atif Aslam and more</a></span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/popular_radio/alka yagnik.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <span><a href="#">With Vinod Rathod, Kumar Sanu, Udit Narayan and
+                                                more</a></span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/popular_radio/diljit.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <span><a href="#">With AP Dhillon, Sidhu Moose Wala, Harrdy Sandhu and
+                                                more</a></span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/popular_radio/a r rahman.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <span><a href="#">With Yuvan Shankar Raja, Hariharan, Chinmayi and
+                                                more</a></span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/popular_radio/honey singh.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <span><a href="#">With Diljit Dosanjh, Guru Randhawa, Himesh Reshammiya and
+                                                more</a></span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/popular_radio/sidhu moose wala.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <span><a href="#">With Shubh, AP Dhillon, Khan Bhaini and more</a></span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/popular_radio/kishore kumar.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <span><a href="#">With Mukesh, Tabassum, Hemant Kumar and more</a></span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/popular_radio/kumar sanu.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <span><a href="#">With Anuradha Paudwal, Jatin-Lalit, Alka Yagnik and
+                                                more</a></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="cards-container">
+                            <div class="main-content-header flex-space-between">
+                                <h2>Featured charts</h2>
+                                <a href="#">Show all</a>
+                            </div>
+                            <div class="cards">
+                                <div class="card">
+                                    <img src="assets/features chart/topsongsglobal.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <span><a href="#">Your weekly update of the most played tracks right now -
+                                                Global.</a></span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/features chart/topsongsindia.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <span><a href="#">Your weekly update of the most played tracks right now -
+                                                India.</a></span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/features chart/top50global.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <span><a href="#">Your daily update of the most played tracks right now -
+                                                Global.</a></span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/features chart/top50india.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <span><a href="#">Your daily update of the most played tracks right now -
+                                                India.</a></span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/features chart/viral50global.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <span><a href="#">Your daily update of the most viral tracks right now -
+                                                Global.</a></span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/features chart/viral50india.jpg" width="200px" alt="song">
+                                    <div class="card-content">
+                                        <span><a href="#">Your daily update of the most viral tracks right now -
+                                                India.</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

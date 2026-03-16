@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Playlist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon" type="image/x-icon" href="svg/favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav>
+                <div class="navbar ">
+                    <div class="navbar-left flex-center">
+                        <div class="logo">
+                            <a href="">
+                                <img src="svg/logo.svg" width="50" alt="logo">
+                            </a>
+                        </div>
+                        <div class="home-search-bar flex-center">
+                            <div class="home">
+                                <a href="#" class="flex-center p-1 border-circule">
+                                    <img src="svg/home.svg" width="50" alt="home">
+                                </a>
+                            </div>
+                            <form action="#" class="search-bar flex-center border-circule">
+                                <div class="input">
+                                    <a href="#" class="search-logo p-1 border-circule">
+                                        <img src="svg/search.svg" width="50" alt="search">
+                                    </a>
+                                    <input class="border-circule" id="search" type="text"
+                                        placeholder="What do you want to play?">
+                                    <a href="#" class="flex-center browse">
+                                        <img src="svg/browse.svg" width="50" alt="browse">
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="navbar-right flex-center">
+                        <div class="items">
+                            <ul class="flex-center">
+                                <li>
+                                    <a href="#">Premium</a>
+                                </li>
+                                <li>
+                                    <a href="#">Support</a>
+                                </li>
+                                <li>
+                                    <a href="#">Download</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pipe">
+
+                        </div>
+                        <div class="install-app">
+                            <a href="#" class="flex-center"><img src="svg/install.svg" width="50" alt="install">Install
+                                App</a>
+                        </div>
+                        <div class="nav-buttons flex-center">
+                            <div class="signup">
+                                <a href="#">Sign up</a>
+                            </div>
+                            <div class="login">
+                                <a href="#">Log in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="fake-header">
+
+        </div>
+        <aside>
+            <div class="sidebar">
+                <div class="sidebar-header flex-space-between">
+                    <div class="flex-center-img">
+                        <h3>Songs</h3>
+                    </div>
+                    <!-- <img id="hamburger" width="30" src="svg/sidebar.svg" alt=""> -->
+                </div>
+                <div class="sidebar-main">
+                    <div class="song-list-card-container">
+                        <!-- <div class="song-list-card flex-space-between">
+                            <div class="flex-start">
+                                <div class="song-list-img flex-center">
+                                    <img src="assets/songs_img/aura.jpg" alt="">
+                                </div>
+                                <div class="song-name playlist-song-name">
+                                    hello
+                                </div>
+                            </div>
+                            <div class="song-duration">
+                                05:21
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <section>
+                <div class="main">
+                    <div class="main-content">
+                        <div class="hero">
+                            <div class="hero-song-img">
+                                <img src="assets/songs_img/khat.jpg" alt="">
+                            </div>
+                            <div class="hero-content">
+                                <div>
+                                    <span>Song</span>
+                                </div>
+                                <div class="playing-song-name">
+
+                                </div>
+                                <div class="singer-name">
+                                    <a href="#">Arijit Bubu</a>
+                                </div>
+                            </div>
+                            <div class="sidebar-hamburger">
+                                <img id="hamburger" width="30" src="svg/sidebar.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="playing-song">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    <div class="playbar">
+        <div class="playbar-container ">
+            <div class="song-name ">
+                <div class="song-img">
+                    <img width="70" src="assets/songs_img/ek din title.jpg" alt="image">
+                </div>
+                <div class="name">
+
+                </div>
+            </div>
+            <div class="play-buttons-container">
+                <div class="play-buttons flex-center">
+                    <div><img id="previous" src="svg/previous.svg" alt=""></div>
+                    <div id="play" class="play"><img src="svg/play.svg" alt=""></div>
+                    <div><img id="next" src="svg/next.svg" alt=""></div>
+                </div>
+                <div class="seekbar-container">
+                    <div class="current-time">
+                        00:00
+                    </div>
+                    <div class="seekbar">
+                        <div class="seekbar-fill"></div>
+                        <div class="circule"></div>
+                    </div>
+                    <div class="duration">
+                        00:00
+                    </div>
+                </div>
+
+            </div>
+            <div class="volume-button-container flex-center">
+                <div id="volumeButton" class="volume-button">
+                    <img width="20" src="svg/volume.svg" alt="">
+                </div>
+                <div id="volumeSeekbar" class="volume-seekbar">
+                    <div class="volume-seekbar-fill"></div>
+                    <div class="volume-circule"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
