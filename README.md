@@ -1,6 +1,6 @@
 # Spotify 2026 Clone 🎧
 
-![Project Preview](preview.png)
+![Project Preview](js/project_2/preview.png)
 
 A Spotify-inspired web music player built using **HTML, CSS, and JavaScript**.
 This project demonstrates DOM manipulation, Fetch API usage, and audio control features in a frontend application.
@@ -90,13 +90,13 @@ git clone https://github.com/praveen-maurya1/spotify-2026-clone.git
 ## 📸 Screenshots
 
 ### Home Page
-![Home Page](screenshots/home.png)
+![Home Page](js/project_2/screenshots/home.png)
 
 ### Playlist Page
-![Playlist](screenshots/playlist.png)
+![Playlist](js/project_2/screenshots/playlist.png)
 
 ### Playlist Page - i phone 14 pro max
-![Playlist](screenshots/playlist_iphone_14.png)
+![Playlist](js/project_2/screenshots/playlist_iphone_14.png)
 
 ---
 
