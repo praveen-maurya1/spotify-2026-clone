@@ -824,11 +824,15 @@ main {
 
 @media (max-width:431px) {
     .playing-song-name {
-        height: 16rem;
+        height: 15rem;
     }
 
     .sidebar.active {
         width: 280px;
+    }
+
+    .hero-content {
+        margin-top: 16px;
     }
 
 }
