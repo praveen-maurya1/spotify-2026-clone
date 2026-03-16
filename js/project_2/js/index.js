@@ -7,7 +7,7 @@ let album = document.querySelector(".playlist")
 // Main function
 async function displayAlbums() {
     // Songs folder fetch karna
-    let a = await fetch(`http://127.0.0.1:5500/js/video 84 project-2/assets/songs`)
+    let a = await fetch(`http://127.0.0.1:5500/js/project_2/assets/songs`)
     let response = await a.text();
 
     // Temporary div banana
@@ -23,7 +23,7 @@ async function displayAlbums() {
             // Folder name extract karna
             let folder = e.href.split("songs/")[1];
             // Album info.json load karna
-            let a = await fetch(`http://127.0.0.1:5500/js/video 84 project-2/assets/songs/${folder}/info.json`)
+            let a = await fetch(`http://127.0.0.1:5500/js/project_2/assets/songs/${folder}/info.json`)
             let response = await a.json();
             // Album card create karna
             album.innerHTML += `<div data-folder=${folder} class="card" >

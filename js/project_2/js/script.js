@@ -39,7 +39,7 @@ function formatTime(seconds) {
 
 async function getSongs(folder) {
     currentFolder = folder;
-    let a = await fetch(`http://127.0.0.1:5500/js/video 84 project-2/${folder}`)
+    let a = await fetch(`http://127.0.0.1:5500/js/project_2/${folder}`)
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -100,7 +100,7 @@ function toggleMuted() {
 // Main play function (very important)
 const playMusic = (track, pause = false) => {
 
-    currentSong.src = `/js/video 84 project-2//${currentFolder}/` + track
+    currentSong.src = `/js/project_2//${currentFolder}/` + track
     if (!pause) {
         currentSong.play()
         document.querySelector("#play img").src = "svg/pause.svg"
